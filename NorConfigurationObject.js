@@ -11,7 +11,7 @@ require('./NorConfigurationServiceObject.js');
  */
 TypeUtils.defineType("NorConfigurationObject", {
     "name": "string",
-    "services": "NorConfigurationServiceObject",
-    "routes": "Object",
-    "auth": "string"
+    "services": "Object.<string, NorConfigurationServiceObject>",
+    "routes": "Object.<string, Object>",
+    "auth": "Object.<string, Object>"
 });
