@@ -1,2 +1,3 @@
-# config
-The core package for NorJS configuration type definitions
+# @norjs/types
+
+The core package for NorJS type definitions.
