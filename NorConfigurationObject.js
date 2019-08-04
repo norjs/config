@@ -5,15 +5,30 @@ require('./NorConfigurationAuthObject.js');
 require('./NorConfigurationRouteObject.js');
 
 /**
+ * @typedef {Object.<string,NorConfigurationServiceObject>} NorConfigurationServiceMap
+ */
+TypeUtils.defineType("NorConfigurationServiceMap", "Object.<string,NorConfigurationServiceObject>");
+
+/**
+ * @typedef {Object.<string,NorConfigurationRouteObject>} NorConfigurationRouteMap
+ */
+TypeUtils.defineType("NorConfigurationRouteMap", "Object.<string,NorConfigurationRouteObject>");
+
+/**
+ * @typedef {Object.<string,NorConfigurationAuthObject>} NorConfigurationAuthMap
+ */
+TypeUtils.defineType("NorConfigurationAuthMap", "Object.<string,NorConfigurationAuthObject>");
+
+/**
  * @typedef {Object} NorConfigurationObject
- * @property {string} name - The root service name
- * @property {Object.<string, NorConfigurationServiceObject>} [services] - Sub services
- * @property {Object.<string, NorConfigurationRouteObject>} [routes] - Routes
- * @property {Object.<string, NorConfigurationAuthObject>} [auth] - Authentication settings
+ * @property                     {string}  name - The root service name
+ * @property {NorConfigurationServiceMap} [services] - Sub services
+ * @property   {NorConfigurationRouteMap} [routes] - Routes
+ * @property    {NorConfigurationAuthMap} [auth] - Authentication settings
  */
 TypeUtils.defineType("NorConfigurationObject", {
     "name": "string",
-    "services": "Object.<string, NorConfigurationServiceObject>",
-    "routes": "Object.<string, NorConfigurationRouteObject>",
-    "auth": "Object.<string, NorConfigurationAuthObject>"
+    "services": "NorConfigurationServiceMap|undefined",
+    "routes": "NorConfigurationRouteMap|undefined",
+    "auth": "NorConfigurationAuthMap|undefined"
 });

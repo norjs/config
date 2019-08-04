@@ -16,6 +16,6 @@ TypeUtils.defineType("NorConfigurationServiceObject", {
     "production": "boolean",
     "development": "boolean",
     "autoStart": "boolean",
-    "env": "Object.<string, string>"
+    "env": "Object.<string,string>"
 });
 
