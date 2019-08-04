@@ -1,6 +1,6 @@
 {
   "name": "@norjs/types",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "NorJS type definitions",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/norjs/types#readme",
   "dependencies": {
-    "@norjs/utils": "^1.0.10"
+    "@norjs/utils": "^1.0.14"
   }
 }
