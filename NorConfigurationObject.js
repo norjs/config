@@ -1,6 +1,8 @@
 const TypeUtils = require("@norjs/utils/Type");
 
 require('./NorConfigurationServiceObject.js');
+require('./NorConfigurationAuthObject.js');
+require('./NorConfigurationRouteObject.js');
 
 /**
  * @typedef {Object} NorConfigurationObject
@@ -12,6 +14,6 @@ require('./NorConfigurationServiceObject.js');
 TypeUtils.defineType("NorConfigurationObject", {
     "name": "string",
     "services": "Object.<string, NorConfigurationServiceObject>",
-    "routes": "Object.<string, Object>",
-    "auth": "Object.<string, Object>"
+    "routes": "Object.<string, NorConfigurationRouteObject>",
+    "auth": "Object.<string, NorConfigurationAuthObject>"
 });
