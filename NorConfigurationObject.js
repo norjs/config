@@ -11,11 +11,6 @@ require('./NorConfigurationRouteObject.js');
 TypeUtils.defineType("NorConfigurationServiceMap", "Object.<string,NorConfigurationServiceObject>");
 
 /**
- * @typedef {Object.<string,NorConfigurationPortalObject>} NorConfigurationPortalMap
- */
-TypeUtils.defineType("NorConfigurationPortalMap", "Object.<string,NorConfigurationPortalObject>");
-
-/**
  * @typedef {Object.<string,NorConfigurationRouteObject>} NorConfigurationRouteMap
  */
 TypeUtils.defineType("NorConfigurationRouteMap", "Object.<string,NorConfigurationRouteObject>");
@@ -35,7 +30,6 @@ TypeUtils.defineType("NorConfigurationAuthMap", "Object.<string,NorConfiguration
 TypeUtils.defineType("NorConfigurationObject", {
     "name": "string",
     "services": "NorConfigurationServiceMap|undefined",
-    "portals": "NorConfigurationPortalMap|undefined",
     "routes": "NorConfigurationRouteMap|undefined",
     "auth": "NorConfigurationAuthMap|undefined"
 });

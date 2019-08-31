@@ -31,6 +31,13 @@ class HttpResponseObject {
 
     /**
      *
+     * @param code {number}
+     * @param headers {Object}
+     */
+    writeHead (code, headers) {}
+
+    /**
+     *
      * @param chunk {string|Buffer}
      * @param encoding {string}
      * @param callback {Function}
