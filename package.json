@@ -1,6 +1,6 @@
 {
   "name": "@norjs/types",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "NorJS type definitions",
   "main": "index.js",
   "scripts": {
