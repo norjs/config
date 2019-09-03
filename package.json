@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/norjs/types#readme",
   "dependencies": {
-    "@norjs/utils": "^1.0.14"
+    "@norjs/utils": "^1.0.15"
   }
 }
