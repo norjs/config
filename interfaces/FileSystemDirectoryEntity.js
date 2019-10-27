@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS File System directory entity object in use by us.
  *
  * @interface
  */
-class FileSystemDirectoryEntity {
+export class FileSystemDirectoryEntity {
 
     /**
      * @returns {boolean}
@@ -61,8 +57,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof FileSystemDirectoryEntity}
- */
-module.exports = FileSystemDirectoryEntity;
+// noinspection JSUnusedGlobalSymbols
+export default FileSystemDirectoryEntity;

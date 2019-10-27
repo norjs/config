@@ -1,5 +1,4 @@
-
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * @typedef {Object} NorConfigurationAuthObject

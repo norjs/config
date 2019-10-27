@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS 'querystring' module.
  *
  * @interface
  */
-class QueryStringModule {
+export class QueryStringModule {
 
     /**
      *
@@ -36,8 +32,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof QueryStringModule}
- */
-module.exports = QueryStringModule;
+// noinspection JSUnusedGlobalSymbols
+export default QueryStringModule;

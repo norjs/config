@@ -1,8 +1,4 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * This interface describes a subset of the API in NodeJS `http.ServerResponse`.
@@ -10,7 +6,7 @@ const TypeUtils = require("@norjs/utils/Type");
  * @see https://nodejs.org/api/http.html#http_class_http_serverresponse
  * @interface
  */
-class HttpResponseObject {
+export class HttpResponseObject {
 
     /**
      * @returns {number}
@@ -59,8 +55,4 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpResponseObject}
- */
-module.exports = HttpResponseObject;
+export default HttpResponseObject;

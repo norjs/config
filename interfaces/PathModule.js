@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS 'path' module.
  *
  * @interface
  */
-class PathModule {
+export class PathModule {
 
     /**
      *
@@ -59,8 +55,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof PathModule}
- */
-module.exports = PathModule;
+// noinspection JSUnusedGlobalSymbols
+export default PathModule;

@@ -1,13 +1,9 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * @interface
  */
-class HttpRequestObject {
+export class HttpRequestObject {
 
     /**
      * @returns {string}
@@ -37,8 +33,4 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpRequestObject}
- */
-module.exports = HttpRequestObject;
+export default HttpRequestObject;

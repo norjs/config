@@ -1,9 +1,8 @@
-const TypeUtils = require("@norjs/utils/Type");
-
-require('./NorConfigurationServiceObject.js');
-require('./NorConfigurationPortalObject.js');
-require('./NorConfigurationAuthObject.js');
-require('./NorConfigurationRouteObject.js');
+import TypeUtils from "@norjs/utils/Type";
+import './NorConfigurationServiceObject.js';
+import './NorConfigurationPortalObject.js';
+import './NorConfigurationAuthObject.js';
+import './NorConfigurationRouteObject.js';
 
 /**
  * @typedef {Object.<string,NorConfigurationServiceObject>} NorConfigurationServiceMap

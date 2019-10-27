@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS HTTP server instance in use by us.
  *
  * @interface
  */
-class HttpServerObject {
+export class HttpServerObject {
 
     /**
      * Starts to listen on a UNIX socket file.
@@ -35,8 +31,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpServerObject}
- */
-module.exports = HttpServerObject;
+// noinspection JSUnusedGlobalSymbols
+export default HttpServerObject;

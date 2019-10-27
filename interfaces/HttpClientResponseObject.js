@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS HTTP module for client connections.
  *
  * @interface
  */
-class HttpClientResponseObject {
+export class HttpClientResponseObject {
 
     /**
      * @returns {number}
@@ -33,8 +29,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpClientResponseObject}
- */
-module.exports = HttpClientResponseObject;
+// noinspection JSUnusedGlobalSymbols
+export default HttpClientResponseObject;

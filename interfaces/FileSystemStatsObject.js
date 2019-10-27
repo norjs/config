@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS File System stats object in use by us.
  *
  * @interface
  */
-class FileSystemStatsObject {
+export class FileSystemStatsObject {
 
     /**
      * @returns {boolean}
@@ -26,8 +22,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof FileSystemStatsObject}
- */
-module.exports = FileSystemStatsObject;
+// noinspection JSUnusedGlobalSymbols
+export default FileSystemStatsObject;

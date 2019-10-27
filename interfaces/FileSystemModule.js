@@ -1,18 +1,13 @@
-require('./FileSystemStatsObject.js');
-require('./FileSystemDirectoryEntity.js');
-
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import './FileSystemStatsObject.js';
+import './FileSystemDirectoryEntity.js';
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS fs module.
  *
  * @interface
  */
-class FileSystemModule {
+export class FileSystemModule {
 
     /**
      *
@@ -89,8 +84,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof FileSystemModule}
- */
-module.exports = FileSystemModule;
+// noinspection JSUnusedGlobalSymbols
+export default FileSystemModule;

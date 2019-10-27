@@ -1,15 +1,11 @@
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * Subset of NodeJS HTTP server module.
  *
  * @interface
  */
-class HttpServerModule {
+export class HttpServerModule {
 
     /**
      *
@@ -29,8 +25,4 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpServerModule}
- */
-module.exports = HttpServerModule;
+export default HttpServerModule;

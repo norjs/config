@@ -1,12 +1,6 @@
-// Interfaces
-require('./HttpClientRequestObject.js');
-require('./HttpClientResponseObject.js');
-
-/**
- *
- * @type {typeof TypeUtils}
- */
-const TypeUtils = require("@norjs/utils/Type");
+import './HttpClientRequestObject.js';
+import './HttpClientResponseObject.js';
+import TypeUtils from "@norjs/utils/Type";
 
 /**
  * @typedef {Object} HttpClientOptionsObject
@@ -58,7 +52,7 @@ TypeUtils.defineType(
  *
  * @interface
  */
-class HttpClientModule {
+export class HttpClientModule {
 
     /**
      *
@@ -78,8 +72,5 @@ TypeUtils.defineType(
     }
 );
 
-/**
- *
- * @type {typeof HttpClientModule}
- */
-module.exports = HttpClientModule;
+// noinspection JSUnusedGlobalSymbols
+export default HttpClientModule;
