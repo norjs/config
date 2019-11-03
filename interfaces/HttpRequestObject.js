@@ -16,6 +16,11 @@ export class HttpRequestObject {
     get url () {}
 
     /**
+     * @returns {Object<string,string>}
+     */
+    get headers () {}
+
+    /**
      *
      * @param eventName {string|Symbol}
      * @param listener {Function}
