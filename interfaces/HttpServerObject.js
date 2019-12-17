@@ -21,6 +21,14 @@ export class HttpServerObject {
      */
     close () {}
 
+    /**
+     *
+     * @param eventName {string|Symbol}
+     * @param listener {Function}
+     * @returns {HttpRequestObject}
+     */
+    on (eventName, listener) {}
+
 }
 
 TypeUtils.defineType(

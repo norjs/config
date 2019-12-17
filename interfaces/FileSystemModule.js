@@ -74,6 +74,24 @@ export class FileSystemModule {
      */
     readdirSync (path, {encoding='utf8', withFileTypes= false}) {}
 
+    /**
+     *
+     * @param filename {string}
+     * @param [persistent] {boolean}
+     * @param [recursive] {boolean}
+     * @param [encoding] {string}
+     * @param [listener] {Function}
+     */
+    watch (
+        filename,
+        {
+            persistent = true,
+            recursive = false,
+            encoding = 'utf8'
+        } = {},
+        listener = undefined
+    ) {}
+
 }
 
 TypeUtils.defineType(
